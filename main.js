@@ -34,14 +34,15 @@ Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100.
 Ogni volta che ne crei uno, stampalo a schermo.
 */
 
+let lista = [];
 let numeroUtente = Number(prompt("Digita un numero"));
-for (let i = 1; i <= 10; i++) {
-  let numeriRandom = Math.round(Math.random() * 100);
-}
 
 for (let n = 1; n <= numeroUtente; n++) {
-  let lista = [];
-  alert("Risultato" + n + ":" + lista);
+  for (let i = 1; i <= 10; i++) {
+    let numeriRandom = Math.round(Math.random() * 100);
+    lista.push(numeriRandom);
+  }
+  alert(lista);
 }
 
 // 3. In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
