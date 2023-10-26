@@ -28,12 +28,32 @@ for (let i = 0; somma < 50; i++) {
 }
 */
 
+// Stesso esercizio fatto con Hyur
+
+/*
+const array = [];
+function arrayElementsSum(values) {
+  let sum = 0;
+  for (let i = 0; i < values.length; i++) {
+    let value = values[i];
+    sum += value;
+  }
+  return sum;
+}
+
+while (arrayElementsSum(array) < 50) {
+  const userNumber = Number(prompt("Dimmi un numero"));
+  array.push(userNumber);
+}
+*/
+
 /*
 2. Fai inserire un numero, che chiameremo N, all’utente.
 Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100.
 Ogni volta che ne crei uno, stampalo a schermo.
 */
 
+/*
 let lista = [];
 let numeroUtente = Number(prompt("Digita un numero"));
 
@@ -43,6 +63,26 @@ for (let n = 1; n <= numeroUtente; n++) {
     lista.push(numeriRandom);
   }
   alert(lista);
+}
+*/
+
+// Stesso esercizio fatto con Hyur
+
+function randomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+const n = Number(prompt("Inserisci un numero"));
+
+for (let i = 1; i <= n; i++) {
+  //FOR che mi crea gli array
+  console.log(i);
+  for (let j = 0; j < 10; j++) {
+    // FOR che mi crea i numeri di un array
+    const number = randomNumber(1, 100);
+    array[1] = number;
+  }
+  console.log(array);
 }
 
 // 3. In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
